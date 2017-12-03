@@ -16,21 +16,21 @@
  * Commonly used net media types constants names
  *
  */
-package _media
+package _net
 
 const (
-	TypeApplicationJSONAPI = "application/vnd.api+json"
-	TypeApplicationAtomXML = "application/atom+xml"
-	TypeApplicationFormURLEncoded = "application/x-www-form-urlencoded"
-	TypeApplicationJSON = "application/json"
-	TypeApplicationOctecStream = "application/octet-stream"
-	TypeApplicationSVGXML = "application/svg+xml"
-	TypeApplicationXHTMLXML = "application/xhtml+xml"
-	TypeApplicationXML = "application/xml"
-	TypeWildcard = "*"
-	TypeMultipartFormData = "multipart/form-data"
-	TypeTextHTML = "text/html"
-	TypeTextPlain = "text/plain"
-	TypeTextXML = "text/xml"
-	Wildcard = "*/*"
+	MediaTypeApplicationJSONAPI = "application/vnd.api+json"
+	MediaTypeApplicationAtomXML = "application/atom+xml"
+	MediaTypeApplicationFormURLEncoded = "application/x-www-form-urlencoded"
+	MediaTypeApplicationJSON = "application/json"
+	MediaTypeApplicationOctecStream = "application/octet-stream"
+	MediaTypeApplicationSVGXML = "application/svg+xml"
+	MediaTypeApplicationXHTMLXML = "application/xhtml+xml"
+	MediaTypeApplicationXML = "application/xml"
+	MediaTypeWildcard = "*"
+	MediaTypeMultipartFormData = "multipart/form-data"
+	MediaTypeTextHTML = "text/html"
+	MediaTypeTextPlain = "text/plain"
+	MediaTypeTextXML = "text/xml"
+	MediaWildcard = "*/*"
 )

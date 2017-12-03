@@ -16,7 +16,7 @@
  * Commonly used net media types constants names
  *
  */
-package _security
+package _net
 
 const (
 	BasicAuth = "BASIC"

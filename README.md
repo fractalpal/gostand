@@ -2,26 +2,43 @@
 
 Commonly used constants names for Go 
 
+### Motivation
+This package aims lacking of commonly used Go constants from various contexts like http headers or media types. No more "application/json", "Content-Length" etc. manual writing in your code.
+
+### Idea
+
 The **idea** is to provide widely used constants names for common packages as nicely companions. 
 
 This package follow the **convention** that every package name in **gostand** begins with underscore("**_**") to avoid collisions and provide smooth companion for other packages. 
 
-For instance _net, _os, _http, _header, _media etc. This concept will provide possibility to add common constant to existing packages like net, net/http, os and others. 
+For instance _net, _os, _http etc. This concept will provide possibility to add common constant to existing packages like net, net/http, os and others. 
 
 ### Instalation
 
+**Get all packages:**
+
 ````
-go get -u github.com/fractalpal/gostand
+go get -u github.com/fractalpal/gostand/...
 ````
 
-### Background
-This package aims lacking of commonly used Go constants from various contexts like http headers or media types. No more "application/json", "Content-Length" etc. manual writing in your code.
+##### Packages:
+_net:
+
+````
+go get -u github.com/fractalpal/gostand/net
+````
+
+_http:
+
+````
+go get -u github.com/fractalpal/gostand/net/http
+````
 
 ### Example
 ```
 import(
-    "github.com/fractalpal/gostand/net/http/header"
-    "github.com/fractalpal/gostand/net/media"
+    "github.com/fractalpal/gostand/net/"
+    "github.com/fractalpal/gostand/net/http"
 )
 
 ```
@@ -29,44 +46,44 @@ import(
 
 
 ```
-contentType := _header.ContentType
-mediaType := _media.TypeApplicationJSON
+contentType := _http.HeaderContentType
+mediaType := _net.MediaTypeApplicationJSON
 ```
 
-Example code lookup
+### Source code sneak peek
 ```
 ...
-Accept = "Accept"
-AcceptCharset = "Accept-Charset"
-AcceptEncoding = "Accept-Encoding"
-AcceptLanguage = "Accept-Language"
-AcceptRanges = "Accept-Ranges"
-Age = "Age"
-Allow = "Allow"
-Authorization = "Authorization"
-CacheControl = "Cache-Control"
-Connection = "Connection"
-ContentEncoding = "Content-Encoding"
-ContentLanguage = "Content-Language"
-ContentLength = "Content-Length"
-ContentLocation = "Content-Location"
-ContentMD5 = "Content-MD5"
+HeaderAccept = "Accept"
+HeaderAcceptCharset = "Accept-Charset"
+HeaderAcceptEncoding = "Accept-Encoding"
+HeaderAcceptLanguage = "Accept-Language"
+HeaderAcceptRanges = "Accept-Ranges"
+HeaderAge = "Age"
+HeaderAllow = "Allow"
+HeaderAuthorization = "Authorization"
+HeaderCacheControl = "Cache-Control"
+HeaderConnection = "Connection"
+HeaderContentEncoding = "Content-Encoding"
+HeaderContentLanguage = "Content-Language"
+HeaderContentLength = "Content-Length"
+HeaderContentLocation = "Content-Location"
+HeaderContentMD5 = "Content-MD5"
 
 ...
-TypeApplicationJSONAPI = "application/vnd.api+json"
-TypeApplicationAtomXML = "application/atom+xml"
-TypeApplicationFormURLEncoded = "application/x-www-form-urlencoded"
-TypeApplicationJSON = "application/json"
-TypeApplicationOctecStream = "application/octet-stream"
-TypeApplicationSVGXML = "application/svg+xml"
-TypeApplicationXHTMLXML = "application/xhtml+xml"
-TypeApplicationXML = "application/xml"
-TypeWildcard = "*"
-TypeMultipartFormData = "multipart/form-data"
-TypeTextHTML = "text/html"
-TypeTextPlain = "text/plain"
-TypeTextXML = "text/xml"
-Wildcard = "*/*"
+MediaTypeApplicationJSONAPI = "application/vnd.api+json"
+MediaTypeApplicationAtomXML = "application/atom+xml"
+MediaTypeApplicationFormURLEncoded = "application/x-www-form-urlencoded"
+MediaTypeApplicationJSON = "application/json"
+MediaTypeApplicationOctecStream = "application/octet-stream"
+MediaTypeApplicationSVGXML = "application/svg+xml"
+MediaTypeApplicationXHTMLXML = "application/xhtml+xml"
+MediaTypeApplicationXML = "application/xml"
+MediaTypeWildcard = "*"
+MediaTypeMultipartFormData = "multipart/form-data"
+MediaTypeTextHTML = "text/html"
+MediaTypeTextPlain = "text/plain"
+MediaTypeTextXML = "text/xml"
+MediaWildcard = "*/*"
 ```
 
 ### Contribution
