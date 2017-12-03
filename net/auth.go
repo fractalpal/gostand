@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Commonly used net media types constants names
+ * Commonly used auth constants names
  *
  */
 package _net

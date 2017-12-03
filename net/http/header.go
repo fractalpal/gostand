@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  *
- * Commonly used HTTP/1.0, HTTP/1.1 and other headers constants names
+ * Commonly used HTTP/1.0, HTTP/1.1 etc. headers constants names
  *
  */
 
