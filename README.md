@@ -11,28 +11,20 @@ The **idea** is to provide widely used constants names for common packages as ni
 
 This package follow the **convention** that every package name in **gostand** begins with underscore("**_**") to avoid collisions and provide smooth companion for other packages. 
 
-For instance _net, _os, _http etc. This concept will provide possibility to add common constant to existing packages like net, net/http, os and others. 
+For instance **_net**, **_http**, **_os** etc. This concept will provide possibility to add common constant to existing packages like net, net/http, os and others. 
 
 ### Instalation
 
 **Get all packages:**
 
 ````
-go get -u github.com/fractalpal/gostand/...
+go get -u github.com/fractalpal/gostand
 ````
+using [dep](https://github.com/golang/dep):
+```
+dep ensure -add github.com/fractalpal/gostand
+```
 
-##### Packages:
-_net:
-
-````
-go get -u github.com/fractalpal/gostand/net
-````
-
-_http:
-
-````
-go get -u github.com/fractalpal/gostand/net/http
-````
 
 ### Example
 ```
