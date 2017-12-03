@@ -3,7 +3,7 @@
 Commonly used constants names for Go 
 
 ### Motivation
-This package aims lacking of commonly used Go constants from various contexts like http headers or media types. No more "application/json", "Content-Length" etc. manual writing in your code.
+This package aims lacking of commonly used constants for Go from various contexts like net, http etc. No more "application/json", "Content-Length" etc. manual declarations.
 
 ### Idea
 
