@@ -80,6 +80,7 @@ MediaWildcard = "*/*"
 
 ### Contribution
 If you like the concept and want to contribute, please feel free to add any commonly used (RFC/KNOWN specification) constants in best appropriate package location and open PR to extend this package even further. Just remember about **underscore** naming convention.
+To speed up the contribution process, if your addition has a support in any standard out there (like RFC's etc), please add this as comment next to line and to PR.
 
 ### License
 [MIT](https://github.com/fractalpal/gostand/blob/master/LICENSE "License")
